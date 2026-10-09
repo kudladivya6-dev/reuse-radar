@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reuse Radar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            ♻️ REUSE RADAR
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#items">Find Items</a>
+            <a href="#impact">Impact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <div class="tag">
+                SDG 12 • RESPONSIBLE CONSUMPTION
+            </div>
+
+            <h1>
+                Reuse what already exists.
+            </h1>
+
+            <p>
+                Find useful items available on your campus
+                instead of buying new ones.
+            </p>
+
+            <a href="#items" class="hero-button">
+                Find an Item
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ITEMS -->
+    <section id="items" class="section">
+
+        <div class="heading">
+
+            <h2>Find Available Items</h2>
+
+            <p>
+                Search for items available on campus.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search item..."
+            >
+
+            <select id="categoryFilter">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="Academic">
+                    Academic
+                </option>
+
+                <option value="Stationery">
+                    Stationery
+                </option>
+
+                <option value="Project">
+                    Project
+                </option>
+
+                <option value="Electronics">
+                    Electronics
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- ITEMS WILL COME HERE -->
+        <div id="itemsContainer" class="items-container">
+
+        </div>
+
+    </section>
+
+
+    <!-- IMPACT -->
+    <section id="impact" class="impact">
+
+        <div class="heading">
+
+            <h2>Reuse Impact</h2>
+
+            <p>
+                Track the impact created through reuse.
+            </p>
+
+        </div>
+
+
+        <div class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ♻️
+                </div>
+
+                <h3 id="reuseCount">
+                    0
+                </h3>
+
+                <p>
+                    Items Reused
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📦
+                </div>
+
+                <h3 id="requestCount">
+                    0
+                </h3>
+
+                <p>
+                    Requests
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    💰
+                </div>
+
+                <h3 id="purchaseCount">
+                    0
+                </h3>
+
+                <p>
+                    Purchases Avoided
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>♻️ REUSE RADAR</h3>
+
+        <p>
+            Discover • Request • Reuse • Track
+        </p>
+
+        <p>
+            TECHSPRINT • Team ID: TS-002
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

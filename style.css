@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7fafc;
+    color: #16324f;
+}
+
+
+/* =====================
+   NAVBAR
+===================== */
+
+.navbar {
+    height: 70px;
+    padding: 0 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: white;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    box-shadow: 0 2px 10px #00000012;
+}
+
+
+.logo {
+    color: #2e7d5b;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #16324f;
+    font-weight: bold;
+}
+
+
+.nav-links a:hover {
+    color: #2e7d5b;
+}
+
+
+/* =====================
+   HERO
+===================== */
+
+.hero {
+    min-height: 75vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #16324f,
+        #2e7d5b
+    );
+
+    color: white;
+}
+
+
+.hero-content {
+    max-width: 800px;
+}
+
+
+.tag {
+    color: #bfe3d0;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+
+.hero-button {
+    display: inline-block;
+
+    background: white;
+    color: #2e7d5b;
+
+    padding: 14px 30px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.hero-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =====================
+   SECTIONS
+===================== */
+
+.section {
+    padding: 70px 7%;
+}
+
+
+.heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+.heading h2 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+
+.heading p {
+    color: #5b6770;
+}
+
+
+/* =====================
+   SEARCH
+===================== */
+
+.search-box {
+
+    max-width: 850px;
+
+    margin: auto auto 40px;
+
+    display: flex;
+
+    gap: 15px;
+}
+
+
+.search-box input,
+.search-box select {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid #d5e3dc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+.search-box input:focus,
+.search-box select:focus {
+
+    border-color: #2e7d5b;
+
+}
+
+
+/* =====================
+   ITEM CARDS
+===================== */
+
+.items-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 25px;
+}
+
+
+.item-card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e1e8e4;
+
+    box-shadow: 0 5px 15px #0000000d;
+
+    transition: 0.3s;
+}
+
+
+.item-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.item-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.item-card h3 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.category {
+
+    display: inline-block;
+
+    background: #e8f3ee;
+
+    color: #2e7d5b;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.condition {
+
+    margin-bottom: 8px;
+
+}
+
+
+.available {
+
+    color: #2e7d5b;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+}
+
+
+.request-btn {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #2e7d5b;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.request-btn:hover {
+
+    background: #245f46;
+
+}
+
+
+/* =====================
+   IMPACT
+===================== */
+
+.impact {
+
+    padding: 70px 7%;
+
+    background: #e8f3ee;
+}
+
+
+.stats {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.stat-card {
+
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px #0000000d;
+
+}
+
+
+.stat-icon {
+
+    font-size: 35px;
+
+}
+
+
+.stat-card h3 {
+
+    font-size: 38px;
+
+    color: #2e7d5b;
+
+    margin: 8px;
+
+}
+
+
+.stat-card p {
+
+    color: #5b6770;
+
+}
+
+
+/* =====================
+   NO RESULTS
+===================== */
+
+.no-items {
+
+    grid-column: 1 / -1;
+
+    text-align: center;
